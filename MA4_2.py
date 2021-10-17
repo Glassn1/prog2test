@@ -13,7 +13,7 @@ cpp_time = []
 def main():
 	I = Integer(0)
 	nlst = range(0,45)
-	""" 	for i in nlst:
+	for i in nlst:
 		I.set(i)
 
 		start = pc()
@@ -24,32 +24,19 @@ def main():
 		start = pc()
 		print(fib_py(i))
 		end = pc()
-		py_time.append(end - start) """
-	I.set(44)
-	start = pc()
-	print("Test 45 cpp: ", I.fib())
-	end = pc()
-	print("Time for n = 45 with cpp: ", end - start)
-	I.set(45)
-	start = pc()
-	print("Test 46 cpp: ", I.fib())
-	end = pc()
-	print("Time for n = 46 with cpp: ", end - start)
-	I.set(46)
-	start = pc()
-	print("Test 47 cpp: ", I.fib())
-	end = pc()
-	print("Time for n = 47 with cpp: ", end - start)
+		py_time.append(end - start) 
+
 	I.set(47)
 	start = pc()
 	print("Test 47 cpp: ", I.fib())
 	end = pc()
 	print("Time for n = 47 with cpp: ", end - start) 
-	""" plt.plot(nlst, cpp_time, 'b.', nlst, py_time, 'r.')
+	
+	plt.plot(nlst, cpp_time, 'b.', nlst, py_time, 'r.')
 	plt.xlabel('Iterations (n)')
 	plt.ylabel("Time for fibonacci (s)")
 	plt.savefig('fib_py_cpp.png')
-	 """
+	
 		
 		
 
